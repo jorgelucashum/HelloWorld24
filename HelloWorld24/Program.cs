@@ -20,6 +20,23 @@ namespace HelloWorld24
             DateTime d3 = new DateTime(2021, 03, 25, 20, 45, 3); // Construtor do 'DateTime' usando a sobrecarga do ano, mes e dia e hora, minutos, segundos.
             DateTime d4 = new DateTime(2021, 03, 25, 20, 45, 3, 500); // Construtor do 'DateTime' usando a sobrecarga do ano, mes e dia e hora, minutos, segundos, milissegundo.
 
+            // TimeSpan: Representa uma duração, é do tipo valor (struct).
+            // - Instanciação: construtores, fields, métodos From, Parse.
+
+            TimeSpan t1 = new TimeSpan(); // Mostrar tempo.
+            TimeSpan t2 = new TimeSpan(900000000L); // Mostrar tempo com construtor de ticks.
+            TimeSpan t3 = new TimeSpan(2, 11, 21); // Mostrar tempo com construtor de hora, minutos e segundos.
+            TimeSpan t4 = new TimeSpan(1, 2, 11, 21); // Mostrar tempo com construtor de dia, hora, minutos e segundos.
+            TimeSpan t5 = new TimeSpan(1, 2, 11, 21, 321); // Mostrar tempo com construtor de dia, hora, minutos e segundos, milissegundos.
+
+
+            Console.WriteLine(t1);
+            Console.WriteLine(t2);
+            Console.WriteLine(t3);
+            Console.WriteLine(t4);
+            Console.WriteLine(t5);
+
+            Console.WriteLine("");
 
             Console.WriteLine(d);
             Console.WriteLine(d.Ticks); // mostra todos os ticks desde 1 de janeira da era comum.
